@@ -1,0 +1,13 @@
+<?php
+require('studio/header/header.html');
+require('studio/slider/slider.html');
+require('studio/underSlider/underSlider.html');
+require('studio/Price/price.html');
+require('studio/tripleSlider/tripleSlider/tripleSlider.html');
+require('studio/OurStudy/OurStudy.html');
+require('studio/tripleSlider/tripleSlider2/tripleSlider2.html');
+require('studio//equipment/equipment.html');
+require('studio/calendar/calendar.php');
+require('studio/OurRulles/OurRulles.html');
+require('studio/footer/footer.html');
+?>
