@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="../window/window.css">
+<div class="last-window__overlay">
+    <div class="last-window">
+        <div onclick='closelastWindow()' class="last-window__cross">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.80192 0L0.000213623 1.80171L6.0061 7.8076L0.000396455 13.8133L1.80211 15.615L7.80781 9.60931L13.8133 15.6148L15.615 13.8131L9.60952 7.8076L15.6152 1.8019L13.8135 0.000192434L7.80781 6.00589L1.80192 0Z" fill="#212121"/>
+                </svg>
+        </div>
+        <div class="last-window__title">
+            Спасибо за заявку)
+        </div>
+        <div class="last-window__text">
+            Наш менеджер скоро свяжется с вами,<br> уточнит детали и подтвердит бронирование
+        </div>
+        <div>
+            <button onclick='closelastWindow()' class="last-window__button">Ок</button>
+        </div>
+    </div>
+    <script>
+        function closelastWindow() {
+            document.querySelector('.last-window__overlay').style.display = 'none';
+        }
+    </script>
+</div>

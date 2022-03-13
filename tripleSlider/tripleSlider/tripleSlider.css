@@ -1,0 +1,126 @@
+.number-slide-black {
+    height: 20px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    color: #000000;
+    margin-left: 9px;
+    display: inline-block;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.title-number-slide-black {
+    height: 20px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 15px;
+}
+
+.arrow-triple-slider__slides {
+    display: none;
+}
+
+.triple-slider__dots {
+    position: relative;
+    right: 15px;
+    display: flex;
+}
+
+.triple-slider__dot {
+    margin-left: 9px;
+}
+
+.triple-slider__title {
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 44px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.triple-slider__track {
+    width: 204.166666%;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.wrapper-slider {
+    padding-right: 0;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.no-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.slide__block>img {
+    width: 100%;
+}
+
+.slide__block {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.triple-slider__small-photo {
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+}
+
+.remainder {
+    flex: 0 0 2.6%;
+    max-width: 2.6%;
+}
+
+.triple-slider {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.triple-slider__huge-photo {
+    flex: 0 0 16.666666%;
+    max-width: 16.666666%;
+}
+
+@media (max-width: 992px) {
+    .triple-slider__dots {
+        display: none;
+    }
+    .arrow-triple-slider__slides {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 0 15px 0;
+    }
+    .triple-slider__track {
+        width: 300%;
+    }
+    .remainder {
+        display: none;
+    }
+    .triple-slider__small-photo {
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    .triple-slider__huge-photo {
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+}

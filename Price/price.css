@@ -1,0 +1,51 @@
+.price {
+    background-color: black;
+    color: white;
+ 
+    padding-top: calc(33px + 100*(100vw/1750));
+    padding-bottom: calc(54px + 80*(100vw/1750));
+}
+
+.filmimg-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Img_TitleImg {
+    margin-top: 60px;
+    margin-bottom: 288px;
+}
+
+.first {
+    padding-bottom: 26px;
+    border-bottom: 1px solid #FFFFFF;
+    margin-top: 26px;
+}
+
+.filmImg {
+    width: calc(262px + 153*(100vw/1750));
+}
+
+.second {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.ButtonBron {
+    margin-top: 60px;
+}
+
+@media screen and (max-width:1024px) {
+    .Img_TitleImg {
+        display: none;
+    }
+    .first {
+        padding-bottom: 26px;
+        border-bottom: 1px solid #FFFFFF;
+        margin-top: 26px;
+        margin-left: 50px;
+    }
+}

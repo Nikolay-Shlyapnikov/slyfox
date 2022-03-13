@@ -1,0 +1,369 @@
+.order {
+    display: none;
+    width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 1;
+}
+
+.time-inputs {
+    z-index: 5;
+    text-align: center;
+}
+
+.stopYear,
+.startYear {
+    display: none;
+}
+
+.__select {
+    position: relative;
+    display: flex;
+    width: 230px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.daySelects {
+    width: calc(70px + 18*(100vw/1750));
+    height: 44px;
+    margin-right: calc(10px + 14*(100vw/1750));
+}
+
+.monthSelects {
+    width: calc(120px + 26*(100vw/1750));
+    height: 44px;
+    margin-right: calc(10px + 14*(100vw/1750));
+}
+
+label {
+    margin-bottom: 0px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.order-cross {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 45px;
+    top: 31px;
+}
+
+.order__form {
+    background-color: #fff;
+    padding-top: calc(5px + 59*(100vw/1750));
+    padding-bottom: calc(10px + 54*(100vw/1750));
+    padding-right: calc(0px + 127*(100vw/1750));
+    padding-left: calc(0px + 127*(100vw/1750));
+    position: relative;
+}
+
+@media (max-width:700px) {
+    .order__form {
+        max-height: 500px;
+        overflow-x: scroll;
+        width: 100%;
+    }
+}
+
+.order__titl-text {
+    font-family: Montserrat;
+    font-size: calc(20px + 16*(100vw/1750));
+    font-style: normal;
+    font-weight: 600;
+    line-height: calc(20px + 24*(100vw/1750));
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: calc(5px + 45*(100vw/1750));
+}
+
+.order__sub-title-text {
+    font-family: Montserrat;
+    font-size: calc(10px + 14*(100vw/1750));
+    font-style: normal;
+    font-weight: 600;
+    line-height: calc(10px + 19*(100vw/1750));
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: calc(5px + 19*(100vw/1750));
+}
+
+.order__input {
+    width: 100%;
+}
+
+button:active,
+button:hover,
+button:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.order__btn {
+    outline: none;
+    background-color: white;
+    width: 230px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #C90D0D;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: 1px solid #C90D0D;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: calc(20px + 30*(100vw/1750));
+}
+
+.Array-Error-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #C90D0D;
+}
+
+.order__text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 18px;
+}
+
+.order__time-choose {
+    display: flex;
+    align-items: center;
+}
+
+.defoult-height {
+    height: calc(20px + 24*(100vw/1750));
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#StartTime {
+    height: 44px;
+}
+
+#StopTime {
+    height: 44px;
+}
+
+.StartMonth__title {
+    z-index: 4;
+}
+
+.StartDay__title {
+    z-index: 4;
+}
+
+.StartDay__content {
+    z-index: 3;
+}
+
+.StartMonth__content {
+    z-index: 3;
+}
+
+.StopMonth__title {
+    z-index: 2;
+}
+
+.StopDay__select {
+    z-index: 2;
+}
+
+.StopMonth__content {
+    z-index: 1;
+}
+
+.StopDay__content {
+    z-index: 1;
+}
+
+.__select[data-state="active"] .__select__title::before {
+    transform: translate(-3px, -50%) rotate(-45deg);
+}
+
+.__select[data-state="active"] .__select__title::after {
+    transform: translate(3px, -50%) rotate(45deg);
+}
+
+.__select[data-state="active"] .__select__content {
+    border-width: 1px;
+    border-color: rgba(199, 204, 209, 1);
+    overflow-y: scroll;
+}
+
+.__select[data-state="active"] .__select__label {
+    max-height: 40px;
+    border-width: 1px;
+}
+
+.__select[data-state="active"] .__select__label::before {
+    display: block;
+    opacity: 1;
+}
+
+.__select__title {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: calc(2px + 14*(100vw/1750));
+    padding-right: calc(8px + 8*(100vw/1750));
+    padding-top: calc(4px + 4*(100vw/1750));
+    padding-bottom: calc(4px + 4*(100vw/1750));
+    border-radius: 5px;
+    border: solid 1px #c7ccd1;
+    cursor: pointer;
+}
+
+.__select__title::before,
+.__select__title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    display: block;
+    width: 10px;
+    height: 2px;
+    transition: all 0.3s ease-out;
+    background-color: #333;
+    transform: translate(-3px, -50%) rotate(45deg);
+}
+
+/*.StartMonth__title::before,
+.StartMonth__title::after,.StopMonth__title::before,
+.StopMonth__title::after {
+   
+}*/
+
+
+
+.__select__title::after {
+    transform: translate(3px, -50%) rotate(-45deg);
+}
+
+.__select__title:hover {
+    border-color: #d8093a;
+}
+
+.__select__title:hover::before,
+.__select__title:hover::after {
+    background-color: #d8093a;
+}
+
+.__select__content {
+    position: absolute;
+    top: 44px;
+    left: 3px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 6px);
+    background-color: #fff;
+    border: 1px solid rgba(199, 204, 209, 0);
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 0.3s ease-out;
+    max-height: 200px;
+}
+
+.__select__input {
+    display: none;
+    pointer-events: none;
+}
+
+.__select__input:checked+label {
+    background-color: #dedede;
+}
+
+.__select__input:checked+label::after {
+    content: attr(data-value);
+}
+
+.__select__input:disabled+label {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.__select__label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    max-height: 0;
+    padding: 0 16px;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.__select__label+input+.__select__label {
+    border-top: 0 solid #c7ccd1 60;
+}
+
+.__select__label:hover {
+    background-color: #d8093a !important;
+    color: #fff;
+}
+
+.__select__label::before {
+    content: attr(data-value);
+    transition: all 0.2s ease-out;
+    opacity: 0;
+    display: none;
+}
+
+.__select__label::after {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    width: 100%;
+    height: 40px;
+    padding: 8px 10px;
+    color: #333;
+    z-index: -1;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}

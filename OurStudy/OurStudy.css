@@ -1,0 +1,116 @@
+@media screen and (max-width:991px) {
+    .Bogomol {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.OutStudy {
+    background-color: black;
+    color: white;
+}
+
+.Title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(25px + 11*(100vw/1750));
+    margin-top: calc(25px + 160*(100vw/1750));
+}
+
+.Text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(14px + 2*(100vw/1750));
+    margin-top: 201px;
+    margin-bottom: 60px;
+}
+
+.Ula {
+    list-style-type: square;
+    margin-left:25px;
+    /* Квадратные маркеры */
+}
+
+.Spisik_Ula {
+    color: red;
+    margin-bottom: 36px;
+}
+
+.Text_Spisik_Ula {
+    color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(16px + 4*(100vw/1750));
+    line-height: 24px;
+}
+
+.DisappearCol {
+    display: none;
+}
+
+.BronButton {
+    border: 1px solid #C90D0D;
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 230px;
+    height: 61px;
+    background-color: black;
+    color: #C90D0D;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.study-wrapper-justify-end {
+    justify-content: flex-end;
+}
+
+.study-wrapper-justify-start {
+    display: flex;
+    justify-content: start;
+}
+
+.BronButton:focus {
+    outline: none;
+}
+
+.CameraImg {
+    margin-top:calc(14px + 170*(100vw/1750));
+}
+
+.Bogomol-x2 {
+    display: none;
+}
+
+.BrunButton-2 {
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .Bogomol-x1 {
+        display: none;
+    }
+    .Bogomol-x2 {
+        display: flex;
+    }
+    .Text {
+        margin-top: 66px;
+    }
+    .DisappearCol {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .BrunButton-1 {
+        display: none;
+    }
+    .BrunButton-2 {
+        display: block;
+    }
+}

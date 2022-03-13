@@ -1,0 +1,127 @@
+@media screen and (max-width:991px) {
+    .Bogomol {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+.RullPhone {
+    background-color: #C1B1B5;
+}
+
+.ListVan {
+    border: 1px solid #000000;
+}
+
+.ListTwo {
+    border: 1px solid #000000;
+}
+
+.Title_ListVan {
+    padding-left: calc(28px + 12*(100vw/1750));
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(16px + 8*(100vw/1750));
+    border-bottom: 1px solid #212121;
+    padding-bottom: calc(24px + 4*(100vw/1750));
+    padding-top: calc(24px + 4*(100vw/1750));
+}
+
+.Title_ListTwo {
+    padding-left: calc(28px + 12*(100vw/1750));
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(16px + 8*(100vw/1750));
+    border-bottom: 1px solid #212121;
+    padding-bottom: calc(24px + 4*(100vw/1750));
+    padding-top: calc(24px + 4*(100vw/1750));
+}
+
+.Text_Elem_Spisok_OurRulles {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(14px + 2*(100vw/1750));
+}
+
+
+.Spisok_OurRulles {
+    
+    margin-top: calc(24px + 4*(100vw/1750));
+}
+
+.Listvan {
+    margin-right: 50px;
+}
+
+.Spisok_OurRulles {
+    list-style-type: square;
+    /* Квадратные маркеры */
+}
+
+.Elem_Spisok_OurRulles {
+   padding-bottom:calc(20px + 6*(100vw/1750));
+    color: red;
+   
+    padding-left: calc(28px + 12*(100vw/1750));
+    padding-right:calc(28px + 12*(100vw/1750));
+    
+}
+
+.Text_Elem_Spisok_OurRulles {
+    color: #212121;
+}
+
+.ListThree {
+    border: 1px solid #000000;
+}
+
+.Title_ListThree {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(16px + 8*(100vw/1750));
+    border-bottom: 1px solid #212121;
+    padding-bottom: 28px;
+    padding-top: 28px;
+    padding-left: 39px;
+}
+
+.Text_ListThree {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: calc(24px + 6*(100vw/1750));
+    padding-left: calc(28px + 12*(100vw/1750));
+    padding-right:calc(28px + 12*(100vw/1750));
+}
+
+.Blocks {
+
+    height: calc(705px + 86*(100vw/1750));
+    margin-bottom: 40px;
+}
+
+.secondrow {
+    margin-top: 40px;
+}
+
+.BossTitle {
+    margin-top: calc(80px + 82*(100vw/1750));
+    margin-bottom: 60px;
+    font-size: calc(28px + 8*(100vw/1750));
+}
+
+.Rulles {
+    padding-bottom: calc(30px + 152*(100vw/1750));
+}
+@media screen and (max-width:380px){
+   .Blocks {
+    width: calc(335px + 212*(100vw/1750));
+    height: 750px;
+    margin-bottom: 40px;
+}
+}

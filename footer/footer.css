@@ -1,0 +1,102 @@
+.footer-desktop {
+    display: none;
+    padding: 80px 0 140px 0;
+}
+
+.footer-tablet {
+    display: block;
+    padding: 80px 0 140px 0;
+}
+a{
+    color:white;
+}
+a:active{
+    color:white;
+}
+@media screen and (min-width:1200px) {
+    .footer-desktop {
+        display: block;
+    }
+    .footer-tablet {
+        display: none;
+    }
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    color: white
+}
+
+.footer-end {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-start {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.BlockContacts {
+    padding-top: 83px;
+    margin-left: 105px;
+}
+
+.InfoContacts {
+    padding-bottom: 28px;
+}
+
+.Text_InfoBlock {
+    flex: 0 0 100%;
+    display: flex;
+    margin-bottom: 28px;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+}
+
+.Text_InfoBlockNotSpan {
+    flex: 0 0 100%;
+    margin: 0 0 28px 0;
+    text-align: left;
+    cursor: pointer; 
+
+}
+
+.align-left {
+    text-align: left;
+}
+
+.h-84 {
+    height: 84px;
+}
+
+.web-icons {
+    display: flex;
+    margin-top: 44px;
+}
+
+.Img_web-icons {
+    margin-right: 40px;
+}
+
+.panamera {
+    margin-left: 20px;
+}

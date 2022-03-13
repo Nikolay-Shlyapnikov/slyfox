@@ -1,0 +1,140 @@
+.active-strelocka{
+    transform: rotate(-90deg);
+    transition: all 0.3s ease-out;
+}
+.passive-strelocka{
+    transform: rotate(0deg);
+    transition: all 0.3s ease-out;
+}
+.ShowerSt{
+    display:flex;
+}
+.horizontal-line {
+    background: #212121;
+    height: 1px;
+    margin-bottom: calc(10px + 30*(100vw/1750));
+}
+
+.equipmentina {
+    background-color: #C1B1B5;
+    padding-top: calc(80px + 104*(100vw/1750));
+    padding-bottom:calc(30px + 132*(100vw/1750));
+}
+
+.equipment__title {
+    font-family: Montserrat;
+    font-size: calc(28px + 6*(100vw/1750));
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.equipment-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: calc(20px + 35*(100vw/1750));
+    flex-wrap: wrap;
+}
+
+.equipment-name {
+    font-family: Montserrat;
+    font-size: calc(20px + 4*(100vw/1750));
+    font-style: normal;
+    font-weight: 800;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease-out;
+    justify-content: center;
+    margin-bottom: calc(10px + 38*(100vw/1750));
+}
+
+.show-description {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.show-arrow {
+    margin-left: calc(20px + 10*(100vw/1750));
+}
+
+.nozzle {
+    padding-left: 0;
+}
+
+.description-text {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.description__image {
+    max-width: 100%;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.description__texts>div:first-child {
+    margin-top: 0;
+}
+.equipment-title{
+    display: flex;
+justify-content: space-between;
+margin-bottom: calc(20px + 35*(100vw/1750));
+flex-wrap: wrap;
+}
+
+@media (max-width:1200px) {
+    .nozzle-name {
+        font-size: calc(14px + 10*(100vw/1750));
+    }
+}
+
+@media (max-width:991px) {
+
+    .description__texts {
+        max-width: 400px;
+    }
+
+    .equipment-name {
+        font-size:calc(16px + 8*(100vw/1750));
+    }
+    .nozzle-name{
+        font-size:calc(13px + 11*(100vw/1750));
+    }
+    .show-description {
+        
+        
+        display: flex;
+        justify-content: center;
+    }
+   
+}
+@media (max-width:440px){
+    .show-description-text{
+        display:none;
+    }
+}

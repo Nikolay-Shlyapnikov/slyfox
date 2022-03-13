@@ -1,0 +1,148 @@
+.calendar__cell {
+    width: 165px;
+    min-height: calc(20px + 130*(100vw/1750));
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    color: white;
+    font-family: Montserrat;
+    font-size: calc(20px + 4*(100vw/1750));
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+
+.booked,
+.booked__text {
+    font-family: Montserrat;
+    font-size: calc(5px + 9*(100vw/1750));
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.booked__time {
+    margin-top: 6px;
+}
+
+.choose-date {
+    color: white;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    top: 20px;
+}
+
+.disabledDays {
+    color: #FFFFFF80;
+    padding-left: calc(0px + 32*(100vw/1750));
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.head {
+    display: flex;
+}
+
+.calendar__row {
+    display: flex;
+}
+
+.head__cell {
+    width: 165px;
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    color: white;
+    font-family: Montserrat;
+    font-size: calc(12px + 12*(100vw/1750));
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: calc(0px + 32*(100vw/1750));
+}
+
+.calendar__row>div:last-child {
+    border-right: none;
+}
+
+.prev-month {
+    padding-left: calc(0px + 100*(100vw/1750));
+}
+
+.next-month {
+    padding-right: calc(0px + 100*(100vw/1750));
+}
+
+.calendar {
+    background-color: black;
+    position: relative;
+}
+
+.table__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.calendar__title {
+    color: white;
+    font-family: Montserrat;
+    font-size: calc(30px + 6*(100vw/1750));
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.week-6>div {
+    border-bottom: none;
+}
+
+.table {
+    margin-top: 50px;
+    border: 1px solid white;
+}
+.thisMonthDays, .prevMonthDays, .nextMonthDays {
+    color: #C90D0D;
+    width: 100%;
+    height: 100%;
+    padding-left: calc(0px + 32*(100vw/1750));
+}
+.booked__text {
+    display: none;
+}
+
+.title-text {
+    color: white;
+    font-family: Montserrat;
+    font-size: calc(16px + 20*(100vw/1750));
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: calc(10px + 10*(100vw/1750));
+    margin-right: calc(10px + 10*(100vw/1750));
+}
