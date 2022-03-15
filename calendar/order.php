@@ -47,13 +47,13 @@ for($i=0;$i < count($dates); ++$i){
 
 
 $host = 'localhost'; // адрес сервера 
-$database = 'u1225959_info_order'; // имя базы данных
-$user = 'u1225959_user_up'; // имя пользователя
-$password = 'G3f2Y5e'; // пароль
+$database = 'databaseName'; // имя базы данных
+$user = 'userName'; // имя пользователя
+$password = 'password'; // пароль
 $link = mysqli_connect($host, $user, $password, $database) 
     or die("Ошибка " . mysqli_error($link));
 
-    $query ="INSERT INTO `Bronirovanie` (`Data`) VALUES ('$dates[$i]')";
+    $query ="INSERT INTO `OrderTable` (`Data`) VALUES ('$dates[$i]')";
     $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link)); 
    
     mysqli_close($link);
@@ -64,7 +64,7 @@ header('Location: http://slyfoxmedia.ru/studio.php');
 else{
 	$nameErr = $emailErr = $genderErr = $websiteErr = "";
 	$name = $email = $gender = $comment = $website = "";
-	$to = "slyfoxmedia@mail.ru"; // емайл получателя данных из формы slyfoxmedia@mail.ru
+	$to = "slyfoxmedia@mail.ru"; // емаил отправляемый менеджерам компании
 	$tema = "Бронирование"; // тема полученного емайла
 	$message .= "Человек по имени: ".$_POST['name']." забронировал <br>";//присвоить переменной значение, полученное из формы name=name
 	$message .= "Его E-mail: ".$_POST['email']."<br>"; //полученное из формы name=email
